@@ -74,14 +74,15 @@ function draw() {
             score= score+500;
             ball= null;
         }
-          if (ball.body.position.x>601 && ball.body.position.x<900){
-           score= score+250;
-          ball= null;
-       }
-        if (ball.body.position.x>301 && ball.body.position.x<600){
+         else if (ball.body.position.x >300 && ball.body.position.x<600){
           score=score+100;
           ball= null;
        }
+         else if (ball.body.position.x>601 && ball.body.position.x<900){
+           score= score+250;
+          ball= null;
+       }
+      
        }
        
     }
